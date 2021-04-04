@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Balance": 1000.0,
+    "Payments": [
+      {
+        "Id": 2,
+        "Date": "2021-01-20T00:00:00",
+        "Amount": 10.0,
+        "Status": 2,
+        "Message": "Payment cancelled as requested.",
+        "AccountId": 1
+      },
+      {
+        "Id": 1,
+        "Date": "2020-11-12T00:00:00",
+        "Amount": 500.0,
+        "Status": 1,
+        "Message": "Payment completed.",
+        "AccountId": 1
+      },
+      {
+        "Id": 3,
+        "Date": "2019-08-05T00:00:00",
+        "Amount": 300.0,
+        "Status": 3,
+        "Message": "Payment rejected as insufficient fund.",
+        "AccountId": 1
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Balance": 30000.0,
+    "Payments": []
+  }
+]
