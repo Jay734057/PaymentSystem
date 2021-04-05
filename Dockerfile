@@ -21,5 +21,5 @@ RUN dotnet publish "PaymentSystem.Service.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "PaymentSystem.Service.dll"]
+ENTRYPOINT ["dotnet", "PaymentSystem.Service.dll", "--environment=Development"]
 
