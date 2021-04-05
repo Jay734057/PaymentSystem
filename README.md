@@ -35,7 +35,7 @@ dotnet test
 dotnet run --project PaymentSystem.Service
 ```
 
-swagger api: http://localhost:5000/swagger/index.html
+swagger api: http://localhost:5000/swagger/index.html or https://localhost:5001/swagger/index.html
 
 ## Note
 * System is using in-memory database with some dummy data in [json file](PaymentSystem.Service/DummyData/DummyData.json)
