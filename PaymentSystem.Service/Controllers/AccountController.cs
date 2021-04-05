@@ -42,7 +42,8 @@ namespace PaymentSystem.Service.Controllers
             }
             catch (Exception ex)
             {
-                var result = StatusCode(StatusCodes.Status500InternalServerError, ex);
+                _logger.LogError($"Error while retriving account by id: {accountId}. {ex.Message}. {ex.StackTrace}");
+                var result = StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
                 return result;
             }
 
