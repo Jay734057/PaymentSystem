@@ -17,12 +17,21 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "PaymentSystem.Service": {
+    "PaymentSystem.Service (development)": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "PaymentSystem.Service (release)": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Release"
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     },
